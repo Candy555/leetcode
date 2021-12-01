@@ -54,12 +54,3 @@ class CQueue:
         if not self.stack2:
             return -1
         return self.stack2.pop()
-
-if __name__ == "__main__":
-    obj = CQueue()
-    value = [[],[],[5],[2],[],[]]
-    obj.appendTail(value)
-    param_2 = obj.deleteHead()
-    print(param_2)
-            
-            
