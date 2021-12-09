@@ -18,10 +18,10 @@
 class Solution:
     def twoSum(self, nums, target):
         result_list = []
-        for idx in range(len(nums)):
-            num = target - nums[idx]
-            if num in nums[:idx]:
-                return [idx, nums.index(num)]
+        for idx, num in enumerate(nums):
+            tmp = target - num
+            if tmp in nums[:idx]:
+                return [idx, nums.index(tmp)]
 
 if __name__ == "__main__":
     obj = Solution()
