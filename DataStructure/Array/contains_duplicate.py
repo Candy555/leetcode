@@ -12,14 +12,16 @@
 # 输入: [1,1,1,3,3,4,3,2,4,2]
 # 输出: true
 
+
 class Solution:
     def contains_duplicate(self, nums):
         if not nums:
             return 0
         return len(nums) != len(set(nums))
 
+
 if __name__ == "__main__":
     obj = Solution()
-    nums = [1,2,3,4]
+    nums = [1, 2, 3, 4]
     result = obj.contains_duplicate(nums)
     print(result)

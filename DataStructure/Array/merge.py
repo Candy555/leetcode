@@ -21,17 +21,18 @@
 # 合并结果是 [1] 。
 # 注意，因为 m = 0 ，所以 nums1 中没有元素。nums1 中仅存的 0 仅仅是为了确保合并结果可以顺利存放到 nums1 中。
 
+
 class Solution:
     def merge(self, nums1, m, nums2, n):
         nums1[:] = sorted(nums1[:m] + nums2)
         return nums1
 
+
 if __name__ == "__main__":
     obj = Solution()
-    nums1 = [1,2,3,0,0,0]
+    nums1 = [1, 2, 3, 0, 0, 0]
     m = 3
-    nums2 = [2,5,6]
+    nums2 = [2, 5, 6]
     n = 3
     result_list = obj.merge(nums1, m, nums2, n)
     print(result_list)
-

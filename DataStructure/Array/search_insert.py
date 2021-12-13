@@ -16,8 +16,9 @@
 # 输入: nums = [1], target = 0
 # 输出: 0
 
+
 class Solution:
-    #二分查找
+    # 二分查找
     def searchInsert(self, nums, target):
         left, right = 0, len(nums)
         while left < right:
@@ -28,10 +29,10 @@ class Solution:
                 right = mid
         return left
 
+
 if __name__ == "__main__":
     obj = Solution()
-    nums = [1,3,5,6]
+    nums = [1, 3, 5, 6]
     target = 0
     result = obj.searchInsert(nums, target)
     print(result)
-

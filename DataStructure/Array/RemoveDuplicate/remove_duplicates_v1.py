@@ -27,27 +27,19 @@
 
 class Solution:
     def removeDuplicates(self, nums):
-        if not nums: return 0
+        if not nums:
+            return 0
         i = 0
         for idx in range(1, len(nums)):
             if nums[i] != nums[idx]:
                 i += 1
                 nums[i] = nums[idx]
-        return i+1
+        return i + 1
 
 
 if __name__ == "__main__":
     obj = Solution()
-    nums = [3,2,2,3]
+    nums = [3, 2, 2, 3]
     val = 3
     length = obj.removeElement(nums, val)
     print(length)
-
-
-
-            
-
-
-
-
-
