@@ -30,7 +30,7 @@ class TreeNode:
 
 class Solution:
     def levelOrder(self, root):
-        # 从上到下打印，按层打印，广度优先搜索（BFS） => 队列，先入先出
+        # 从上到下打印，层次遍历，广度优先搜索（BFS） => 队列，先入先出
         if not root:
             return []
 
